@@ -1,0 +1,193 @@
+/********* fonts
+
+font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Sacramento', cursive;
+***********/
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
+
+h1 {
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+  color: #66bfbf;
+  font-family: "Sacramento", cursive;
+}
+
+h2 {
+  color: #66bfbf;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+}
+
+h3 {
+  color: #11999e;
+  font-family: "Montserrat", sans-serif;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  color: #11999e;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: grey;
+  border-width: 5px;
+  width: 5%;
+}
+
+.navbar ul {
+  list-style-type: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  margin: 0 0 10 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a:hover {
+  color: rgb(78, 218, 243);
+}
+
+.top-container {
+  background-color: #bbe3f2;
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle-container {
+  padding-bottom: 6rem;
+  margin: 0 0 10 0;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+.rounded {
+  border-radius: 45%;
+}
+
+.subtitle {
+  font-weight: normal;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.cooking-img {
+  width: 15%;
+  float: left;
+  margin-right: 30px;
+}
+
+.code-img {
+  width: 15%;
+  float: right;
+  margin-left: 30px;
+}
+.btn {
+  background-color: #555555;
+  border: none;
+  border-radius: 4px;
+  color: rgb(155, 150, 150);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.btn:hover {
+  background-color: #494949;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contact {
+  display: inline-block;
+}
+
+.radio-toolbar {
+  margin: 10px;
+}
+
+.radio-toolbar input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radio-toolbar label {
+  display: inline-block;
+  background-color: #ddd;
+  padding: 5px 5px;
+  border: 2px solid #444;
+  border-radius: 4px;
+}
+
+.radio-toolbar label:hover {
+  background-color: rgb(78, 218, 243);
+}
+
+.radio-toolbar input[type="radio"]:focus + label {
+  border: 2px dashed #444;
+}
+
+.radio-toolbar input[type="radio"]:checked + label {
+  background-color: rgb(78, 218, 243);
+  border-color: rgb(41, 125, 139);
+}
+
+/*.middle-container {
+} */
+
+.bottom-container {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: 5rem;
+  background-color: #66bfbf;
+  width: 100%;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#copyright {
+  color: #eaf6f6;
+}
+
+#message textarea {
+  width: 400px;
+  height: 100px;
+}

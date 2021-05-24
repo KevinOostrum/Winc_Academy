@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/*                  Flexbox Settings                  */
+.flex-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  flex: 1 1 auto;
+}
+
+.flex-item {
+  width: 400px;
+  border: 1px solid gray;
+  border-radius: 7px;
+  margin: 0px 7px;
+  box-shadow: 1px 1px 1px gray;
+}
+
+.flex-content {
+  padding: 0px 0px 10px 0px;
+  margin: 20px 20px 0px 20px;
+}
+
+.button-box {
+  display: flex;
+  flex-flow: row nowrap;
+  flex: 1 0 auto;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+  padding: 5%;
+}
+
+hr {
+  color: lightgray;
+}
+
+.flex-content h3 {
+  margin-top: 0px;
+  margin-bottom: 3px;
+  font-weight: 700;
+  font-size: 23px;
+  padding: 0px;
+}
+
+.flex-content .relation {
+  color: #a1a1a1;
+  margin-top: 0px;
+  font-size: 18px;
+}
+
+.flex-container p,
+.flex-item p {
+  font-size: 1.1rem;
+  color: #444444;
+  line-height: normal;
+}
+
+.avatar {
+  width: 45px;
+  float: right;
+  vertical-align: top;
+}
+
+/*                  Button settings                  */
+.btn {
+  padding: 7px 0px;
+  width: 50%;
+  margin-bottom: 0px;
+  border: 2px solid;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: white;
+}
+
+.approve {
+  order: 1;
+  color: green;
+  border-radius: 6px 0px 0px 6px;
+  margin-right: -3px;
+}
+
+.approve:hover {
+  border: 2px solid green;
+  background-color: green;
+  color: white;
+}
+
+.decline {
+  order: 2;
+  color: red;
+  border-radius: 0px 6px 6px 0px;
+  margin-left: -3px;
+}
+
+.decline:hover {
+  border: 2px solid red;
+  background-color: red;
+  color: white;
+}

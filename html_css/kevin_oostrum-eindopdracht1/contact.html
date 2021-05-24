@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Kevin Oostrum</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="grid-page">
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>I'm Kevin</h1>
+            <h2>An aspiring Front-end web developer</h2>
+            <h3>Details</h3>
+            <hr>
+            <p>
+                <strong>Name:</strong><br /> Kevin Oostrum<br />
+                <strong>Age:</strong><br /> 29 years<br />
+                <strong>Location:</strong><br /> Alphen aan den rijn, The Netherlands
+            </p>
+        </header>
+        <div class="header-img"><img class="pasfoto" src="images/pasfoto.jpg" alt="" /></div>
+        <div class="projects">
+            <h3>Contact me</h3>
+            <div class="proj-container">
+                 
+<form name="contact" method="POST" data-netlify="true">
+    <label>Your Name: <input type="text" name="name" /></label><br>
+    <label>Your Email: <input type="email" name="email" /></label><br>
+    <p>How did you find this online resume?<br>
+        <input type="checkbox" id="option1" name="option1" value="GitHub">
+        <label for="option1"> GitHub</label>
+        <br>
+        <input type="checkbox" id="option2" name="option2" value="LinkedIn">
+        <label for="option2"> LinkedIn</label>
+        <br>
+        <input type="checkbox" id="option3" name="option3" value="Search">
+        <label for="option3"> Search Engine</label>
+    </p>
+    <p><label id="message">Message: <textarea name="message"></textarea></label>
+    </p>
+    <br>
+    <button class="btn" type="submit">Send</button>
+    <button class="btn" input type="reset">Reset</button>
+</form>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-link">
+                <ul>
+                    <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+                    <li><a href="https://twitter.com/">Twitter</a></li>
+                    <li><a href="https://github.com/KevinOostrum/">Github</a></li>
+                </ul>
+                <p id="copyright">© 2021 Kevin Oostrum.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

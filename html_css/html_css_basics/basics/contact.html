@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Kevin Oostrum</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="page-container">
+        <header>
+            <div class="top-container">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <img class="top-cloud" src="images/cloud.png" alt="">
+                <h1>I'm Kevin</h1>
+                <h2 class="subtitle">An aspiring Front-end web developer</h2>
+                <img class="bottom-cloud" src="images/cloud.png" alt="">
+                <img src="images/mountain.png" alt="">
+            </div>
+        </header>
+        <main>
+            <div class="middle-container">
+        <div class="contact">
+            <form name="contact" method="POST" data-netlify="true">
+                <label>Your Name: <input type="text" name="name" /></label><br>
+                <label>Your Email: <input type="email" name="email" /></label><br>
+                <label>Birthdate: <input type="date" name="Birthdate" /></label><br>
+                <div class="radio-toolbar"> Gender: <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+                <p>How did you find this online resume?<br>
+                    <input type="checkbox" id="option1" name="option1" value="GitHub">
+                    <label for="option1"> GitHub</label>
+                    <br>
+                    <input type="checkbox" id="option2" name="option2" value="LinkedIn">
+                    <label for="option2"> LinkedIn</label>
+                    <br>
+                    <input type="checkbox" id="option3" name="option3" value="Search">
+                    <label for="option3"> Search Engine</label>
+                </p>
+                <p>
+                    <label for="favcolor">Select your favorite color:</label>
+                    <input type="color" id="favcolor" name="favcolor">
+                </p>
+                <p><label id="message">Message: <textarea name="message"></textarea></label>
+                </p>
+                <p><label for="myfile">Select a file:</label>
+                    <input type="file" id="myfile" name="myfile">
+                </p>
+                <p>
+                <label for="homepage">Add your homepage:</label>
+                <input type="url" id="homepage" name="homepage">
+                 </p>
+                <br>
+                <button class="btn" type="submit">Send</button>
+                <button class="btn" input type="reset">Reset</button>
+            </form>
+        </div>
+    </div>
+        </main>
+<footer>
+    <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+        <a class="footer-link" href="https://twitter.com/">Twitter</a>
+        <p id="copyright">© 2021 Kevin Oostrum.</p>
+    </div>
+</footer>
+</div>
+</body>
+
+</html>

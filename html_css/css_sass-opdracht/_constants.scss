@@ -1,0 +1,7 @@
+$padding: 20;
+
+@mixin general__text--styling {
+  text-align: justify;
+  padding: 20px;
+  line-height: 1.4em;
+}

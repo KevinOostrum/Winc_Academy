@@ -1,0 +1,117 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #c3cfe2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  margin: 0 0 auto;
+  text-align: center;
+}
+
+/* FLEXible portfolio grid */
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.portfolio__item {
+  overflow: hidden;
+  position: relative;
+  width: 30%;
+  margin: 25px auto;
+  border-radius: 10px;
+}
+
+.portfolio__item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  height: 100%;
+  width: 100%;
+}
+
+.portfolio__item:hover img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.portfolio__more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #202544;
+  color: white;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.portfolio__more a {
+  background-color: white;
+  color: black;
+  border-radius: 3px;
+  margin-top: 20px;
+  padding: 7px 15px;
+  text-decoration: none;
+}
+
+.portfolio__item:hover .portfolio__more {
+  opacity: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 960px) {
+  .portfolio__item {
+    width: 45%;
+    margin: 12px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio__item {
+    width: 100%;
+    margin: 12px 12px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

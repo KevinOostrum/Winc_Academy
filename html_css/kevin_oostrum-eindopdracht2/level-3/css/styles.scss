@@ -1,0 +1,83 @@
+//Mixins
+@mixin hover {
+  transition: transform 250ms ease-in-out;
+  &:hover {
+    transform: translateX(calc(-100% + 50px));
+  }
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c3cfe2;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.socialmedia {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: calc(100% - 50px);
+  top: 50%;
+  min-width: 250px;
+
+  &__button {
+    list-style-type: none;
+    padding: 0;
+
+    &--blog {
+      background-color: #e17b77;
+      @include hover;
+    }
+    &--twitter {
+      background-color: #00aced;
+      @include hover;
+    }
+    &--linkedin {
+      background-color: #007bb6;
+      @include hover;
+    }
+    &--facebook {
+      background-color: #3b5998;
+      @include hover;
+    }
+    &--github {
+      background-color: #333;
+      @include hover;
+    }
+  }
+  a {
+    color: #fff;
+  }
+  span {
+    color: #fff;
+    font-size: 1rem;
+    padding: 18px;
+    width: 50px;
+  }
+}
+
+/* Span symbol settings */
+.fab,
+.fas {
+  font-family: "Font Awesome 5";
+}
+.fa-laptop-code::before {
+  content: "\f5fc";
+}
+.fa-twitter::before {
+  content: "\f099";
+}
+.fa-linkedin-in::before {
+  content: "\f0e1";
+}
+.fa-facebook-f::before {
+  content: "\f39e";
+}
+.fa-github::before {
+  content: "\f09b";
+}

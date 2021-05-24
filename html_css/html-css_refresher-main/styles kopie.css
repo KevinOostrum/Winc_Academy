@@ -1,0 +1,102 @@
+/** Reset everything to 0 **/
+
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+  margin: 10px;
+}
+
+.center {
+  margin: 0%;
+  width: 90%;
+}
+
+.flexcontainer {
+  float: left;
+  overflow: auto;
+  width: 45%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-color: lightgrey;
+  border-radius: 7px;
+}
+
+.flex-item {
+  float: none;
+  display: flexcontainer;
+}
+
+.flexcontainer h3, .flex-item h3 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: normal;
+  letter-spacing: -1px;
+  margin-top: 10px;
+}
+
+statusline {
+  color: gray;
+  line-height: 1;
+  font-size: 20px;
+  /* letter-spacing: -1px; */
+}
+
+.flexcontainer p, .flex-item p {
+  font-size: 18px;
+  line-height: normal;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+button {
+  border: none;
+  color: white;
+  width: 50%;
+  height: 10%;
+  background-color: whitesmoke;
+  padding: 11px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flexcontainer;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.flex-item-top {
+  /* margin: 2px 5px 2px 2px; */
+  padding: 0px 0px 0px 0px;
+}
+
+.flex-item-bottom {
+  /* margin: 0px 0px 0px 0px; */
+  padding: 0px 0px 0px 0px;
+  border-top: 0.2px solid lightgrey;
+}
+
+.approve {
+  border: 2px solid;
+  color: green;
+  border-radius: 7px 0px 0px 7px;
+  margin-right: -3px;
+}
+
+.decline {
+  border: 2px solid;
+  color: red;
+  border-radius: 0px 7px 7px 0px;
+  margin-left: -3px;
+}
+
+.approve,
+.decline {
+  margin-bottom: 5px;
+}

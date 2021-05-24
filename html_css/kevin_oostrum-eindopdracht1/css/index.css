@@ -1,0 +1,139 @@
+/* grid */
+
+.grid-page {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 50px;
+  grid-template-rows: 60px 1fr 1fr 1.5fr 150px;
+  height: 1800px;
+  grid-template-areas:
+    ". nav nav ."
+    ". header h-img ."
+    ". dip comp ."
+    ". proj proj ."
+    ". footer footer .";
+}
+
+nav {
+  grid-area: nav;
+  background-color: #e7e6e1;
+}
+
+header {
+  grid-area: header;
+  background-color: #f7f6e7;
+}
+
+main {
+  grid-area: dip;
+  background-color: #f2a154;
+}
+
+aside {
+  grid-area: comp;
+  background-color: #f2a154;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #e7e6e1;
+}
+
+.header-img {
+  grid-area: h-img;
+  background-color: #f7f6e7;
+}
+
+.pasfoto {
+  align-self: flex-start;
+  border-radius: 5%;
+}
+
+.projects {
+  grid-area: proj;
+  background-color: #314e52;
+}
+
+.proj-content {
+  height: 300px;
+  width: 400px;
+}
+
+.proj-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding-top: 50px;
+  text-align: left;
+  color: #f7f6e7;
+}
+
+.proj-container h4 {
+  text-align: center;
+}
+
+/* Media Selectors */
+@media screen and (max-width: 1400px) {
+  html,
+  body {
+    margin: 0;
+  }
+
+  .proj-container {
+    justify-content: center;
+    padding: 100px;
+    text-align: left;
+    color: #f7f6e7;
+  }
+
+  .proj-content {
+    height: 500px;
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  html,
+  body {
+    margin: 0;
+  }
+
+  .grid-page {
+    grid-template-columns: 100%;
+    grid-template-rows: 60px 1fr 1fr 1fr 1fr 1500px 150px;
+    height: 100vh;
+    grid-template-areas:
+      "nav"
+      "header"
+      "h-img"
+      "dip"
+      "comp"
+      "proj"
+      "footer";
+  }
+
+  .navigation ul {
+    list-style-type: none;
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .pasfoto {
+    align-self: center;
+    border-radius: 5%;
+  }
+
+  .proj-container {
+    justify-content: center;
+    padding: auto;
+    text-align: left;
+    color: #f7f6e7;
+  }
+
+  .proj-content {
+    height: 470px;
+    width: 450px;
+  }
+}

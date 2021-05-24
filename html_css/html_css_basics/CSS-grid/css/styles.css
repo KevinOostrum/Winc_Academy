@@ -1,0 +1,64 @@
+.grid-page {
+  border: solid 2px grey;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px 2fr 1fr 150px;
+  height: 1000px;
+  grid-template-areas:
+    "header     header  header"
+    "main       main    main"
+    "widget     widget  widget"
+    "footer     footer  footer";
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+  margin: 2px;
+}
+header {
+  grid-area: header;
+  background-color: dodgerblue;
+}
+
+main {
+  grid-area: main;
+  background-color: green;
+}
+
+aside {
+  grid-area: skills;
+  background-color: purple;
+}
+
+footer {
+  grid-area: footer;
+  background-color: blue;
+}
+
+@media (min-width: 1240px) {
+  .grid-page {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 80px;
+    grid-template-areas:
+      "nav nav"
+      "header   header"
+      "main    main"
+      "widget  widget"
+      "footer  footer";
+  }
+}
+
+@media (min-width: 1600px) {
+  .grid-page {
+    grid-template-columns: 300px 1fr 300px;
+    grid-template-rows: 1fr 1fr 1fr 80px;
+    grid-template-areas:
+      "header   main      widget"
+      "header   main      widget"
+      "header   main      widget"
+      "header   footer    widget";
+  }
+}
