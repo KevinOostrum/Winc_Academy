@@ -36,17 +36,15 @@ console.log(fullPrice(2, 1.09))
 priceCheck()
 
 // version 2
-const calcVat = function (total, vat){
-    const vatAmmount = total/(vat + 1);
-    return vatAmmount;
-}
+const calcBasePrice = function(total, vat) {
+    const basePrice = total / ((100 + vat) / 100);
+    return basePrice;
+};
 
-const basePrice = function (total, vat){
-    const results = [];
-    const sum = calcVat(total, vat);
-    const final = total - sum;
-    results.push(final,sum)
-    return results
-}
+const basePriceVat = function(total, vat) {
+    const basePrice = calcBasePrice(total, vat);
+    const VAT = total - basePrice;
+    return [basePrice, VAT];
+};
 
-console.log(basePrice(1210, 0.21))
+console.log(basePriceVat(1210, 21));
